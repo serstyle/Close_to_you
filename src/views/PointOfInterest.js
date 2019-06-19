@@ -1,5 +1,6 @@
 import React from 'react';
-// import Geolocation from 'react-geolocation';
+import { Helmet } from 'react-helmet';
+
 import CardsList from '../Components/CardsList';
 import useFetchUrl from '../hooks/useFetchUrl';
 import '../assets/styles/views.css';
@@ -16,10 +17,13 @@ function PointOfInterest(props) {
     <p>something went wrong pls refresh</p>
   ) : (
     <div>
+      <Helmet>
+        <title>Places to see | CloseToYou</title>
+      </Helmet>
       <h1 className="title">What to do here ? </h1>
       <h3 className="sub-title">Top 25 locations to go close to you ! </h3>
       {!isFetch ? (
-        <p>Loading ...</p>
+        <p className="text-center">Loading ...</p>
       ) : (
         <CardsList {...props} pois={response.data} />
       )}

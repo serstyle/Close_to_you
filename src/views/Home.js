@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import '../assets/styles/home.css';
 
 export default function Home() {
   return (
     <div className="wrapper">
+      <Helmet>
+        <title>Home | CloseToYou</title>
+      </Helmet>
       <div className="header">
         <div className="transparency"></div>
         <div className="header-inside">
           <div>
-            <h1>Welcome</h1>
+            <h1>Welcome to CloseToYou</h1>
             <div className="btn-container">
               <Link to="/hotel" className="btn">
                 Find a hotel

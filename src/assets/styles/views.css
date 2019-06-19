@@ -34,3 +34,12 @@
 .select-sort option {
     font-weight:normal;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-light{
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+}

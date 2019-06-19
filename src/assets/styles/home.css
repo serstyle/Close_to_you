@@ -32,6 +32,8 @@
     right: 0;
 }
 .header h1 {
+  margin-right: 20px;
+  margin-left: 20px;
     text-align: center;
     font-size: 4rem;
     margin-bottom: 0;
@@ -59,11 +61,19 @@
 
 @media (max-width: 500px) {
   .header h1 {
+    margin-right: 0;
+    margin-left: 0;
     font-size: 3rem;
   }
   .btn-container{
     flex-direction: column;
     margin:50px 30px;
     justify-content: center;
+  }
+}
+
+@media (max-width:375px){
+  .btn-container{
+    margin: 10px 30px;
   }
 }

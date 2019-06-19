@@ -17,12 +17,10 @@ export default function useFetchUrl(url, token) {
           setIsFetch(true);
           setIsErr(false);
         }
-        console.log('res ', resp);
       })
       .catch(err => {
         setIsFetch(false);
         setIsErr(true);
-        console.log('err', err);
       });
   }, [token, url]);
   return [response, isFetch, isErr];
