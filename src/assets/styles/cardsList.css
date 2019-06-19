@@ -1,0 +1,8 @@
+.cardList-component{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    margin: 20px auto;
+    justify-content: center;
+}

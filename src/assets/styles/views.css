@@ -1,0 +1,36 @@
+.title{
+    text-align: center;
+}
+
+
+.sort-container{
+    display: flex;
+}
+.sub-title{
+    margin-left: 15px;
+}
+
+.select-sort { 
+    font-size: 16px;
+    color: var(--dark);
+    padding: .6em 1.4em .5em .8em;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid var(--light);
+    box-shadow: var(--shadow);
+    border-radius: .5em;
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--light) 0%,#e5e5e5 100%);
+}
+.select-sort::-ms-expand {
+    display: none;
+}
+.select-sort:hover {
+    cursor: pointer;
+}
+.select-sort:focus {
+    outline: none;
+}
+.select-sort option {
+    font-weight:normal;
+}
